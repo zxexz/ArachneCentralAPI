@@ -24,10 +24,9 @@ package com.odysseusinc.arachne.portal.service.impl;
 
 import com.odysseusinc.arachne.portal.exception.NotExistException;
 import com.odysseusinc.arachne.portal.model.Paper;
-import com.odysseusinc.arachne.portal.model.RawDataSource;
 import com.odysseusinc.arachne.portal.repository.AnalysisRepository;
-import com.odysseusinc.arachne.portal.repository.BaseRawDataSourceRepository;
 import com.odysseusinc.arachne.portal.repository.PaperRepository;
+import com.odysseusinc.arachne.portal.repository.RawDataSourceRepository;
 import com.odysseusinc.arachne.portal.repository.StudyRepository;
 import com.odysseusinc.arachne.portal.repository.SubmissionGroupRepository;
 import com.odysseusinc.arachne.portal.repository.SubmissionInsightRepository;
@@ -51,7 +50,7 @@ public class BreadcrumbServiceImpl implements BreadcrumbService {
     private final SubmissionGroupRepository submissionGroupRepository;
     private final SubmissionInsightRepository submissionInsightRepository;
     private final UserRepository userRepository;
-    private final BaseRawDataSourceRepository<RawDataSource> dataSourceRepository;
+    private final RawDataSourceRepository dataSourceRepository;
     private final PaperRepository<Paper> paperRepository;
 
     @Autowired
@@ -61,7 +60,7 @@ public class BreadcrumbServiceImpl implements BreadcrumbService {
                                  final SubmissionInsightRepository submissionInsightRepository,
                                  final SubmissionGroupRepository submissionGroupRepository,
                                  final UserRepository userRepository,
-                                 final BaseRawDataSourceRepository dataSourceRepository,
+                                 final RawDataSourceRepository dataSourceRepository,
                                  final PaperRepository<Paper> paperRepository) {
 
         this.studyRepository = studyService;
