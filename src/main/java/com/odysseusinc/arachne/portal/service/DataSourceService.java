@@ -1,6 +1,6 @@
 /*
  *
- * Copyright 2017 Observational Health Data Sciences and Informatics
+ * Copyright 2018 Observational Health Data Sciences and Informatics
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -22,11 +22,8 @@
 
 package com.odysseusinc.arachne.portal.service;
 
-import com.odysseusinc.arachne.portal.model.DataSource;
 import com.odysseusinc.arachne.portal.model.IDataSource;
-import java.util.List;
 
 public interface DataSourceService extends BaseDataSourceService<IDataSource> {
 
-    List<IDataSource> getAllByUserId(Long userId);
 }
